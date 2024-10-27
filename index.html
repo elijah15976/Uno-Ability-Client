@@ -11,8 +11,17 @@
       <h2 id="title">Tres Abilities</h2>
   
       <div id="action">
-        <button id="create">Create Game</button>
-        <button id="join">Join Game</button>
+        <button id="create" onclick="createGame()">Create Game</button>
+        <button id="join" onclick="joinGame()">Join Game</button>
+      </div>
+
+      <div class="prep" id="createGame">
+        
+      </div>
+      
+      <div class="prep" id="joinGame">
+        <input type="text" id="enterCode" placeholder="Enter Code">
+        <button id="joinButton" onclick="joinTheGame()">Join</button>
       </div>
     </div>
     <script src="script.js"></script>

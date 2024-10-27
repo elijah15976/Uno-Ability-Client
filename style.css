@@ -1,5 +1,27 @@
 body {
+  background-color: #3f0d0d;
+  ;
   margin: 0px;
+}
+
+input {
+  background-color: #00000000;
+  font-size: 20px;
+  padding: 5px;
+  border: none;
+  border-bottom: 2px solid black;
+  color: white;
+}
+
+button {
+  background-color: #FFFFFF;
+  border: 2px black solid;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button:active {
+  background-color: #DDDDDD;
 }
 
 #main {
@@ -9,10 +31,25 @@ body {
 #title {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 50px;
+  text-decoration: underline;
+  color: white;
 }
 
 #action button {
   padding: 50px;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 25px;
+}
+
+#createGame,
+#joinGame {
+  display: none;
+}
+
+#joinButton {
+  padding: 5px 15px 5px 15px;
+  font-size: 15px;
+}
+
+.prep {
+  margin: 10px;
 }
