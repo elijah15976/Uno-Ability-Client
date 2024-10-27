@@ -16,3 +16,8 @@ function joinTheGame() {
 
   console.log(code);
 }
+
+//Set up the game, and press "Create"
+function createTheGame() {
+
+}
