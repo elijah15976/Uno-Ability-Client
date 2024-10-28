@@ -64,4 +64,13 @@ function handleMessage(message) {
   else if(message == "Room not found"){
     alert("Room not found");
   }
+
+  //Game is starting
+  else if(message.includes("Game Start: ")){
+    let code = message.substring(12);
+
+    sessionStorage.setItem("code", code);
+
+    window.location.href = "/game.html";
+  }
 }
