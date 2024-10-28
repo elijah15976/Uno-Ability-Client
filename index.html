@@ -1,39 +1,42 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Tres Ability</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <div id="main">
-      <h2 id="title">Tres Abilities</h2>
-  
-      <div id="action">
-        <button id="create" onclick="createGame()">Create Game</button>
-        <button id="join" onclick="joinGame()">Join Game</button>
-      </div>
 
-      <div class="prep" id="createGame">
-        <h4>Create Game</h4>
-        <p>Players: </p>
-        <select>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-        </select>
-        
-        <hr>
-        
-        <button id="createButton" onclick="createTheGame()">Create</button>
-      </div>
-      
-      <div class="prep" id="joinGame">
-        <input type="text" id="enterCode" placeholder="Enter Code">
-        <button id="joinButton" onclick="joinTheGame()">Join</button>
-      </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Tres Ability</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="main">
+    <h2 id="title">Tres Abilities</h2>
+
+    <div id="action">
+      <button id="create" onclick="createGame()">Create Game</button>
+      <button id="join" onclick="joinGame()">Join Game</button>
     </div>
-    <script src="script.js"></script>
-  </body>
+
+    <div class="prep" id="createGame">
+      <h4>Create Game</h4>
+      <p>Players: </p>
+      <select id="players">
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select>
+
+      <hr>
+
+      <button id="createButton" onclick="createTheGame()">Create</button>
+    </div>
+
+    <div class="prep" id="joinGame">
+      <input type="text" id="enterCode" placeholder="Enter Code">
+      <button id="joinButton" onclick="joinTheGame()">Join</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
 </html>

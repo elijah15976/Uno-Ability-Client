@@ -19,5 +19,11 @@ function joinTheGame() {
 
 //Set up the game, and press "Create"
 function createTheGame() {
+  let players = parseInt(document.getElementById("players").value);
 
+  let data = {
+    "players": players
+  }
+
+  console.log(data);
 }
