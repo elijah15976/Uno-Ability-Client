@@ -14,7 +14,12 @@ function joinGame() {
 function joinTheGame() {
   let code = document.getElementById("enterCode").value;
 
-  console.log(code);
+  let data = {
+    "type": "join",
+    "code": code
+  }
+  
+  socket.send(JSON.stringify(data));
 }
 
 //Set up the game, and press "Create"
@@ -22,8 +27,16 @@ function createTheGame() {
   let players = parseInt(document.getElementById("players").value);
 
   let data = {
+    "type": "create",
     "players": players
   }
 
-  console.log(data);
+  socket.send(JSON.stringify(data));
+}
+
+/**
+ * This function is called when a message is received from the server.
+ */
+function handleMessage(message) {
+  console.log(message);
 }
